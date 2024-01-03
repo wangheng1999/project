@@ -21,3 +21,7 @@ translate_btn.onclick = function () {
         btn.innerHTML = '开始查询'
     }
 }
+
+if(window.location.search == '?type=1'){
+    location.href = './schoolCode.html'
+}
