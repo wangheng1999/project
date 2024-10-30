@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'No.019-Sounso-Quality-2';
+}
+@font-face {
+    src: url("./font/No.019-Sounso-Quality-2.ttf");
+    font-family: 'No.019-Sounso-Quality-2';
+}
+img{
+    width: 100%;
+    display: block;
+}
+.con{
+    width: 100%;
+    background: url("./image/b3.webp") no-repeat center;
+    background-size: cover;
+}
+.content{
+    width: 1260px;
+    margin: auto;
+    position: relative;
+}
+.box1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /*background: white;*/
+    left: 25.5%;
+    top: 26.5%;
+    cursor: pointer;
+}
+.card1{
+    left: 0%;
+    top: 26.5%;
+}
+.box2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /*background: white;*/
+    left: 68.5%;
+    top: 26.5%;
+    cursor: pointer;
+}
+.card2{
+    left: 40%;
+    top: 26.5%;
+}
+.box3{
+    position: absolute;
+    width: 140px;
+    height: 170px;
+    /*background: white;*/
+    left: 46%;
+    top: 18%;
+    cursor: pointer;
+    z-index: 99;
+}
+.card3{
+    left: 41%;
+    top: 30%;
+
+}
+.box4{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    /*background: white;*/
+    left: 32.5%;
+    top: 71%;
+    cursor: pointer;
+}
+.card4{
+    left: 2%;
+    top: 63%;
+}
+
+.box5{
+    position: absolute;
+    width: 150px;
+    height: 230px;
+    /*background: white;*/
+    left: 73%;
+    top: 52%;
+    cursor: pointer;
+}
+.card5{
+    left: 45%;
+    top: 50%;
+}
+.card{
+    width: 250px;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.6s;
+    opacity: 0;
+}
+.card_text{
+    width: 100%;
+    height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+.card_text::-webkit-scrollbar{
+    width: 0;
+}
+.card_title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.content_title{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 0 black;
+}
+.box{
+    background: rgba(255,255,255,0);
+    animation: 2s box linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    text-align: center;
+    color: orangered;
+}
+@keyframes box {
+    0%{
+        background: rgba(255,255,255,0);
+    }
+    25%{
+        background: rgba(255,255,255,0.3);
+    }
+    50%{
+        background: rgba(255,255,255,0.8);
+    }
+    75%{
+        background: rgba(255,255,255,0.3);
+    }
+    100%{
+        background: rgba(255,255,255,0);
+    }
+}
